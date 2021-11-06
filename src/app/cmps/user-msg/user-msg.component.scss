@@ -1,0 +1,31 @@
+.user-msg {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: -50px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 350px;
+    padding: 10px 15px;
+    border: 1px solid #0c1217;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0c1217;
+    transition: 0.4s;
+    .msg {
+        flex-grow: 1;
+    }
+    .close {
+        width: 30px;
+        text-align: end;
+        font-family: monospace;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    &.show {
+        bottom: 10px;
+    }
+}

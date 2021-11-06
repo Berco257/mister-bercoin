@@ -1,0 +1,26 @@
+<section class="contact-details-page">
+    <div class="nav-wrapper main-layout">
+        <ul class="nav clean-list flex align-center space-between">
+            <li><a routerLink="../">Back</a></li>
+            <li><a routerLink="../edit/{{contact._id}}">Edit</a></li>
+        </ul>
+    </div>
+    <div class="details-wrapper">
+        <div class="details main-layout">
+            <div class="avatar">
+                <img src="./assets/images/contact.svg">
+            </div>
+            <div class="remove">
+                <img  (click)="toggleRemoveModal(false)" title="Delete contact" src="./assets/images/delete.svg">
+            </div>
+            <remove-modal [isRemoveModal]="isRemoveModal" (toggleRemoveModal)='toggleRemoveModal($event)'></remove-modal>
+            <h2>{{contact.name}}</h2>
+            <p class="phone">{{contact.phone}}</p>
+            <p class="email">{{contact.email}}</p>
+            <P>BTC: {{contact.coins}}</P>
+        </div>
+    </div>
+    <transfer-funds (transfer)="onTransfer($event)" [userCoins]="loggedInUser?.coins || 100" [contactName]="contact.name"></transfer-funds>
+    <move-list [title]="movesTitle" [moves]="movesList" [bitcoinRate]="bitcoinRate"></move-list>
+
+</section>

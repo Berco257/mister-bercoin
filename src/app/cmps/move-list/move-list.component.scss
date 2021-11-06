@@ -1,0 +1,20 @@
+.move-list {
+    background-color: #141d24;
+    .img {
+        height: 30px;
+        img {
+            height: 100%;
+        }
+    }
+    .title {
+        gap: 15px;
+        height: 65px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .empty {
+        max-width: 400px;
+        margin: auto;
+        padding-block: 0 20px;
+    }
+}

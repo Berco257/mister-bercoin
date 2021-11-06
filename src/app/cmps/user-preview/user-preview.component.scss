@@ -1,0 +1,47 @@
+.user-preview {
+    text-align: start;
+    font-size: 1.4rem;
+    padding-block: 20px 20px;
+    background-color: #141d24;
+    .details-wrapper {
+        max-width: 400px;
+        margin: auto;
+        h2 {
+            color: whitesmoke;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-block-end: 2px solid #33373a;
+        }
+        .details {
+            font-size: 1.3rem;
+            .balance>:not(:last-child),
+            .btc>:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            .balance {
+                .bit {
+                    span {
+                        color: #98d42c;
+                    }
+                }
+                .usd {
+                    span {
+                        color: #546a7d;
+                    }
+                }
+            }
+            .btc {
+                text-align: end;
+                .rate {
+                    font-size: 1.8rem;
+                }
+            }
+            .title {
+                font-size: 1rem;
+                color: #73787c;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.remove-modal {
+    z-index: 10;
+    display: grid;
+    position: fixed;
+    place-content: center;
+    inset: 0;
+    padding: 30px;
+    background-color: #676767a6;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    &.show {
+        pointer-events: all;
+        opacity: 1;
+    }
+    .modal {
+        background-color: white;
+        color: #000000;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px 0 black;
+        text-align: start;
+        & > :not(:last-child) {
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+        .actions {
+            text-align: end;
+            padding-top: 10px;
+            .action {
+                border: unset;
+                background-color: unset;
+                padding: 0;
+                cursor: pointer;
+            }
+            .cancel {
+                color: #00599b;
+                margin-inline-end: 20px;
+            }
+            .delete {
+                color: red;
+            }
+        }
+    }
+}

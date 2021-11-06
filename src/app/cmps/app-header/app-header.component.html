@@ -1,0 +1,15 @@
+<section class="app-header-wrapper">
+    <div class="app-header main-layout flex align-center">
+        <p><a class="logo" routerLink="" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Mr.BerCoin</a></p>
+        <nav>
+            <ul class="clean-list flex" [ngClass]="{'active':isMenuOpen}">
+                <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                        (click)="toggleMenu()">Home</a></li>
+                <li><a routerLink="contact" routerLinkActive="active" (click)="toggleMenu()">Contacts</a></li>
+            </ul>
+            <div [ngClass]="{'screen':isMenuOpen}" (click)="toggleMenu()"></div>
+        </nav>
+        <hamburger (toggleMenu)="toggleMenu()" [isMenuOpen]="isMenuOpen"></hamburger>
+    </div>
+</section>

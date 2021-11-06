@@ -1,0 +1,49 @@
+.transfer-funds-wrapper {
+    background-color: #253541;
+    padding-bottom: 20px;
+    text-align: center;
+    .transfer-funds {
+        position: relative;
+        input {
+            width: 200px;
+            font-size: 1.2rem;
+            padding: 15px;
+            margin-bottom: 5px;
+            border: 2px solid #0c1217;
+            background-color: #0c1217ad;
+            color: whitesmoke;
+            border-radius: 7px;
+            outline: none;
+            border-inline-end: none;
+            border-start-end-radius: unset;
+            border-end-end-radius: unset;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        button {
+            background-color: #ef4f6b;
+            padding: 15px;
+            font-size: 1.2rem;
+            color: whitesmoke;
+            border: 2px solid #0c1217;
+            border-radius: 7px;
+            border-inline-start: none;
+            border-start-start-radius: unset;
+            border-end-start-radius: unset;
+            width: 100px;
+            align-self: end;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .error {
+            display: block;
+            color: #de2445;
+        }
+    }
+}

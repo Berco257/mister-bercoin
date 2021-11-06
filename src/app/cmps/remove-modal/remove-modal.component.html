@@ -1,0 +1,10 @@
+<section class="remove-modal" [ngClass]="{'show':isRemoveModal}">
+    <div class="modal">
+        <h3>Delete confirmation</h3>
+        <p>Are you sure you want to delete the contact?</p>
+        <div class="actions">
+            <button class="action cancel" (click)="toggleModal(false)">CANCEL</button>
+            <button class="action delete" (click)="toggleModal(true)">DELETE</button>
+        </div>
+    </div>
+</section>

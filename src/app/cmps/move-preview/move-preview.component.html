@@ -1,0 +1,10 @@
+<li class="move-preview-wrapper">
+    <div class="move-preview main-layout flex align-center">
+        <div class="details flex dir-column">
+            <p class="name">To {{move.to}}</p>
+            <p class="amount">₿ {{move.amount}} | <span>{{(move.amount / bitcoinRate) | currency:'USD' }}</span></p>
+            <p class="status">status: <span>approve</span></p>
+            <p class="at">{{move.at|date:'dd.MM.yy, HH:mm a'}} </p>
+        </div>
+    </div>
+</li>

@@ -1,0 +1,5 @@
+<section class="home-page">
+    <user-preview *ngIf="loggedInUser" [loggedInUser]="loggedInUser" [bitcoinRate]="bitcoinRate | async"></user-preview>
+    <bitcoin-chart></bitcoin-chart>
+    <move-list *ngIf="loggedInUser" [title]="movesTitle" [moves]="movesList" [bitcoinRate]="bitcoinRate | async"></move-list>
+</section>

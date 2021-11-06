@@ -1,0 +1,38 @@
+.move-preview-wrapper {
+    background-color: #17212b;
+    box-shadow: 0 -2px 1px 0px #222b35;
+    .move-preview {
+        position: relative;
+        margin-top: 3px;
+        grid-gap: 20px;
+        gap: 20px;
+        padding-block: 15px;
+        .details {
+            color: whitesmoke;
+            flex-grow: 1;
+            max-width: 400px;
+            margin: auto;
+            .name {
+                font-size: 1.3rem;
+            }
+            .amount {
+                font-size: 1.4rem;
+                color: #98d52f;
+                span {
+                    color: #657f94;
+                }
+            }
+            .status {
+                font-size: 1.2rem;
+                
+                span {
+                    color: #4b9de1;
+                }
+            }
+            .at {
+                font-size: 1.1rem;
+                color: #8d9499;
+            }
+        }
+    }
+}

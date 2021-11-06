@@ -1,0 +1,61 @@
+.app-header-wrapper {
+    display: flex;
+    height: 65px;
+    background-color: #253541;
+    outline: 2px solid #49494996;
+    .app-header {
+        width: 100%;
+        p {
+            flex-grow: 1;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        .screen {
+            pointer-events: none;
+            opacity: 0;
+            position: fixed;
+            z-index: 9;
+            inset: 0;
+            background-color: #676767a6;
+            transition: 0.4s;
+            @media screen and (max-width: 500px) {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+        nav {
+            text-align: center;
+            position: relative;
+            ul {
+                align-items: baseline;
+                gap: 30px;
+                li {
+                    cursor: pointer;
+                }
+                @media screen and (max-width: 500px) {
+                    align-items: center;
+                    z-index: 10;
+                    flex-direction: column;
+                    position: fixed;
+                    top: 0;
+                    right: -200px;
+                    background-color: #0c1217;
+                    height: 100vh;
+                    box-shadow: 0 0 20px 0 #00000091;
+                    padding: 20px;
+                    padding-top: 85px;
+                    transition: 0.4s;
+                    &.active {
+                        right: 0;
+                    }
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+}

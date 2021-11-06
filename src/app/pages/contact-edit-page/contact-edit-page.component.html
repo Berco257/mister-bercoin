@@ -1,0 +1,22 @@
+<section class="contact-edit-page">
+    <div class="main-layout">
+        <ul class="nav clean-list flex align-center space-between">
+            <li *ngIf="contact._id"><a routerLink="../../{{contact._id}}">Back</a></li>
+            <li *ngIf="!contact._id"><a routerLink="../">Back</a></li>
+        </ul>
+    </div>
+
+    <div class="details-wrapper">
+        <div class="details main-layout">
+            <div class="avatar">
+                <img src="./assets/images/contact.svg">
+            </div>
+            <form #form="ngForm" class="flex dir-column" (ngSubmit)="onSaveContact(form)">
+                <input [(ngModel)]="contact.name" name="name" autofocus type="text" placeholder="Name" required>
+                <input [(ngModel)]="contact.phone" name="phone" type="text" placeholder="Phone">
+                <input [(ngModel)]="contact.email" name="email" type="text" placeholder="Email">
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</section>

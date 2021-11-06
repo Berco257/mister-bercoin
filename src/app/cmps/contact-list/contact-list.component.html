@@ -1,0 +1,5 @@
+<ul class="contact-list clean-list">
+    <contact-filter></contact-filter>
+    <p class="empty" *ngIf="contacts.length === 0">No contacts here...</p>
+    <contact-preview *ngFor="let contact of contacts" [contact]="contact"></contact-preview>
+</ul>

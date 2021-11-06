@@ -1,0 +1,11 @@
+<div class="transfer-funds-wrapper">
+    <div class="transfer-funds main-layout">
+        <form (ngSubmit)="onTransfer(form)" #form="ngForm">
+            <input required autofocus type="number" ngModel #amount="ngModel" name="amount" placeholder="Amount"
+                min="{{minAmount}}" max="{{userCoins}}">
+            <button type="submit">Transfer</button>
+            <small class="error" *ngIf="amount.invalid&&amount.touched">*please enter amount between {{minAmount}} to
+                {{userCoins}}</small>
+        </form>
+    </div>
+</div>

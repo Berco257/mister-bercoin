@@ -1,0 +1,25 @@
+.contact-preview-wrapper {
+    background-color: #253541;
+    box-shadow: 0 -2px 1px 0px #494949;
+    .contact-preview {
+        position: relative;
+        margin-top: 3px;
+        grid-gap: 20px;
+        gap: 20px;
+        padding-block: 15px;
+        cursor: pointer;
+        .avatar {
+            height: 70px;
+            img {
+                height: 100%;
+            }
+        }
+        .details {
+            color: #9f9f9f;
+            flex-grow: 1;
+            h4 {
+                color: whitesmoke;
+            }
+        }
+    }
+}

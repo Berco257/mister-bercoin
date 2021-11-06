@@ -1,0 +1,14 @@
+<section class="move-list">
+    <div class="main-layout">
+        <div class="title flex align-center">
+            <div class="img">
+                <img src="./assets/images/history.png">
+            </div>
+            <h2>{{title}}</h2>
+        </div>
+        <p class="empty" *ngIf="moves?.length===0">No moves here...</p>
+    </div>
+    <ul class="clean-list">
+        <move-preview *ngFor="let move of moves" [move]="move" [bitcoinRate]="bitcoinRate"></move-preview>
+    </ul>
+</section>

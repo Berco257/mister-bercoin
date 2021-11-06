@@ -1,0 +1,18 @@
+<section class="user-preview">
+    <div class="main-layout">
+        <div class="details-wrapper">
+            <h2>Hello {{loggedInUser.fullName}},</h2>
+            <div class="details flex space-between">
+                <div class="balance">
+                    <p class="title">CURRENT BALANCE</p>
+                    <p class="bit">BIT: <span>₿ {{loggedInUser.coins}}</span></p>
+                    <p class="usd">USD: <span>{{((1 / bitcoinRate)*loggedInUser.coins) | currency:'USD'}}</span></p>
+                </div>
+                <div class="btc">
+                    <p class="title">CURRENT BTC USD</p>
+                    <p class="rate">{{(1 / bitcoinRate) | currency:'USD'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
