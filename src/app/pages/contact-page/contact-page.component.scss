@@ -1,22 +1,16 @@
 .contact-page {
     .add-contact {
-        display: grid;
-        place-content: center;
         z-index: 5;
         position: fixed;
         bottom: 10px;
         right: 10px;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         border: 1px solid #0c1217;
-        background-color: #ef4f6b;
-        font-size: 3rem;
         cursor: pointer;
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-            margin-top: -10px;
+        img {
+            height: 100%;
         }
     }
 }
