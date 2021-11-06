@@ -1,0 +1,23 @@
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.flex {
+    display: flex;
+}
+.dir-column {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
