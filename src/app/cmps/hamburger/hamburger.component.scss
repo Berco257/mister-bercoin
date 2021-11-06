@@ -32,13 +32,13 @@
             &::before {
                 color: whitesmoke;
                 transform: rotate(45deg);
-                left: 10px;
+                left: 9px;
                 top: 1px;
             }
             &::after {
                 color: whitesmoke;
                 transform: rotate(-45deg);
-                left: -10px;
+                left: -9px;
                 top: -1px;
             }
         }
